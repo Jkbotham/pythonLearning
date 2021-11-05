@@ -19,20 +19,53 @@ else:
 
 number = random.randint(1,x)
 
-def question(): 
+# def question(): 
+#     guess = input("Guess a number between 1 and " + str(x) + "! ")
+
+#     if int(guess) > x:
+#         print("That guess is not within the range. Guess a number between 1 and " + str(x) + "! ")
+#         print()
+#         question()
+
+#     if int(guess) != number: 
+#         print("That is incorrect")
+#         print()
+#         question()
+#     else:
+#         print("Thats correct! The number is " + str(number) + "!")
+#         quit()
+
+# question()
+
+
+
+
+
+# Second way of doing this with a "While" loop
+# =============================================
+
+# while
+#     break
+#     continue
+
+while True:
+
     guess = input("Guess a number between 1 and " + str(x) + "! ")
 
-    if int(guess) > x:
-        print("That guess is not within the range. Guess a number between 1 and " + str(x) + "! ")
-        print()
-        question()
-
-    if int(guess) != number: 
-        print("That is incorrect")
-        print()
-        question()
+    if guess.isdigit():
+        if int(guess) > x:
+            print("That guess is not within the range. Guess a new number between 1 and " + str(x) + "! ")
+            continue
+        else:
+            if int(guess) != number:
+                print("That is incorrect, please try again")
+                print()
+                continue
+            else:
+                print("Thats correct! The number is " + str(number) + "!")
+                break
     else:
-        print("Thats correct! The number is " + str(number) + "!")
-        quit()
+        print("Please enter a number and try agian")
+        continue
 
-question()
+quit()
