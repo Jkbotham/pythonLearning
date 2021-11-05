@@ -14,24 +14,24 @@ if play.casefold() != "yes":
 
 print("")
 
-firstAnswer = input("What color is the sky? ")
+answer = input("What color is the sky? ")
 
 print("")
 
-if firstAnswer.casefold() == "blue":
+if answer.casefold() == "blue":
     print(correct)
-    score = score + 1
+    score += 1
     print(displayScore, score)
     print("")
 else:
     print(incorrect, "The correct answer is Blue")
     print("")
 
-secondAnswer = input("What color is are fire truck usually? ")
+answer = input("What color is are fire truck usually? ")
 
-if secondAnswer.casefold() == "red":
+if answer.casefold() == "red":
     print(correct)
-    score = score + 1
+    score += 1
     print(displayScore, score)
     print("")
 else:
@@ -39,11 +39,11 @@ else:
     print("")
 
 
-thirdAnswer = input("What is the solid form of water? ")
+answer = input("What is the solid form of water? ")
 
-if thirdAnswer.casefold() == "ice":
+if answer.casefold() == "ice":
     print(correct)
-    score = score + 1
+    score += 1
     print(displayScore, score)
     print("")
 else:
@@ -51,11 +51,11 @@ else:
     print("")
 
 
-fourthAnswer = input("What is the color of the stars on the American flag? ")
+answer = input("What is the color of the stars on the American flag? ")
 
-if fourthAnswer.casefold() == "white":
+if answer.casefold() == "white":
     print(correct)
-    score = score + 1
+    score += 1
     print(displayScore, score)
     print("")
 else:
@@ -63,11 +63,11 @@ else:
     print("")
 
 
-fourthAnswer = input("What state is famous for Hollywood? ")
+answer = input("What state is famous for Hollywood? ")
 
-if fourthAnswer.casefold() == "califonia":
+if answer.casefold() == "califonia":
     print(correct)
-    score = score + 1
+    score += 1
     print(displayScore, score)
     print("")
 else:
