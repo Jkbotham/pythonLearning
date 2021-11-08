@@ -51,10 +51,46 @@
 #     print("yeah tis cold")
 
 
-weight = float(input("What is your weight? "))
-kOrL = input("(K)g or (L)bs ")
+# weight = float(input("What is your weight? "))
+# kOrL = input("(K)g or (L)bs ")
 
-if kOrL.casefold() == "l":
-    print("You weigh ", weight / 2.2046, "KG")
-elif kOrL.casefold() == "k":
-    print("You weigh ", weight * 2.046), "LBS"
+# if kOrL.casefold() == "l":
+#     print("You weigh ", weight / 2.2046, "KG")
+# elif kOrL.casefold() == "k":
+#     print("You weigh ", weight * 2.046), "LBS"
+
+
+
+# ------------------------------------------------------------
+
+name = "James"
+
+#Length of name
+print(len(name))
+
+#Finds the index of a in string
+print(name.find("a"))
+
+# Capitalizes first char in string
+print(name.capitalize())
+
+# # Capitalizes all char in string
+print(name.upper())
+
+# Lower cases' all char in a string
+print(name.lower())
+
+# Checks if name is a digit
+print(name.isdigit())
+
+# Checks if name is all alphabetic chars
+print(name.isalpha())
+
+# Counts number of specific char in a string
+print(name.count("J"))
+
+# Replaces one char with another
+print(name.replace("J","U"))
+
+#Multiples the string to display X times
+print(name*3)
