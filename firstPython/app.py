@@ -94,3 +94,67 @@ print(name.replace("J","U"))
 
 #Multiples the string to display X times
 print(name*3)
+
+# ----------------------------------------------
+
+# Math Functions
+
+import math
+
+pi = 3.14
+x=1
+y=2
+z=3
+
+
+# Rounds number for us
+print(round(pi))
+
+# Rounds number UP.. Math ceiling
+print(math.ceil(pi))
+
+# Rounds down
+print(math.floor(pi))
+
+# Absolute value of a number
+print(abs(pi))
+
+# Raise a base number to a power
+print(pow(pi, 2))
+
+# Square root funtion
+print(math.sqrt(pi))
+
+# Largest of a varying amount of values
+print(max(x,y,z))
+
+# Find lowest value 
+print(min(x,y,z))
+
+# --------------------------------------------------
+
+# String slicing
+# Use either indexing[start:stop:step] or slice()
+
+name = "James Botham"
+
+# Creating substring based off portion of my name
+firstName = name[0:5]
+lastName = name[6:]
+funkyName = name[0:12:2]
+# Reverse Name
+reversedName = name[::-1]
+
+print(firstName)
+print(lastName)
+# Displays every second char
+print(funkyName)
+print(reversedName)
+
+# Slice Function
+
+website = "http://google.com"
+
+slice = slice(7,-4)
+
+print(website[slice])
