@@ -158,3 +158,50 @@ website = "http://google.com"
 slice = slice(7,-4)
 
 print(website[slice])
+
+# --------------------------------------------------
+
+# Logical Operators [and, or, not]
+# if not(temp >=0 and temp <=30:)
+
+# --------------------------------------------------
+
+# for loops
+
+# for i in range(10):
+#     print(i+1)
+
+# Counts each number bettween the given range.  range(start number, end number, step)
+for i in range (100, 50-1,-1):
+    print(i)
+
+# Prints each letter in the string
+for i in "James Botham":
+    print(i)
+
+import time
+
+# for seconds in range(10,0,-1):
+#     print(seconds)
+    # This pauses for one second in each iteration of the loop
+    # time.sleep(1)
+# Once the 10 second loop is finished above it runs the print below
+print("Happy New Year")
+
+# Difference bettwen for and while loops:  A for loop will execute a limited amount of time and a while loop will execute for an unlimited amount of time untill given and escape command.
+
+
+# --------------------------------------------------
+
+# Nested loops -- One loop inside another loop: The "inner loop" will finish all iterations before finishing one iteration of the "outter loop"
+
+rows = int(input("How many rows?: "))
+columns = int(input("How many columns?: "))
+symbol = input("Enter a symbol to use: ")
+
+for i in range(rows):
+    for j in range(columns):
+        # print(columns)
+        # This end="" will prevent the print from going down to a new line.
+        print(symbol, end="")
+    print()
