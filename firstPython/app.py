@@ -195,13 +195,109 @@ print("Happy New Year")
 
 # Nested loops -- One loop inside another loop: The "inner loop" will finish all iterations before finishing one iteration of the "outter loop"
 
-rows = int(input("How many rows?: "))
-columns = int(input("How many columns?: "))
-symbol = input("Enter a symbol to use: ")
+# rows = int(input("How many rows?: "))
+# columns = int(input("How many columns?: "))
+# symbol = input("Enter a symbol to use: ")
 
-for i in range(rows):
-    for j in range(columns):
-        # print(columns)
-        # This end="" will prevent the print from going down to a new line.
-        print(symbol, end="")
-    print()
+# for i in range(rows):
+#     for j in range(columns):
+#         # print(columns)
+#         # This end="" will prevent the print from going down to a new line.
+#         print(symbol, end="")
+#     print()
+
+# --------------------------------------------------
+
+# Loop control statments
+#
+# Break = Used to terminate the loop entirely
+# Continue = skips to the next iteration of the Loop
+# Pass = does nothing, acts as a placeholder
+
+# phone_number = "123-456-7890"
+
+# for i in phone_number:
+#     if i == "-":
+#         continue
+#     print(i, end="")
+
+# for i in range(1,21):
+
+#     if i == 13:
+#         pass
+#     else:
+#         print(i)
+
+# --------------------------------------------------
+
+# 2D lists
+
+drinks = ["Coffee", "Soda", "Water"]
+meat = ["Chicken", "Steak", "Pork"]
+dessert = ["Ice Cream", "Cake", "Pie"]
+
+foods = [drinks,meat,dessert]
+
+# Prints the first item in the first list 
+print(foods[0][0])
+
+
+# --------------------------------------------------
+
+# Tuples = Collection which is ordered and unchangable 
+#   Used to group together related data
+
+student = ("Jim", 21, "Male")
+
+print(student.index("Male"))
+
+for x in student:
+    print(x)
+
+# --------------------------------------------------
+
+# Set = Collection which is unordered, unindexed.  No duplicate values
+
+utensiles = {"fork", "spoon", "knife"}
+dishes = {"bowl", "plate", "cup","knife"}
+
+# utensiles.add("napkin")
+# utensiles.difference("fork")
+# utensiles.update(dishes)
+# dinnerTable = utensiles.union(dishes)
+# print(utensiles.difference(dishes))
+
+for x in utensiles:
+    print(x)
+
+# --------------------------------------------------
+# Dictionary : Changable, unordered collection of unique key: value pairs
+    # Fast because they use hashing, allow us to uaccess a value quickly
+
+capitals = {"USA":"Washington DC",
+            "India":"New Dehli",
+            "China": "Beijing",
+            "Russia": "Moscow"}
+
+# print(capitals["China"])
+# print(capitals.get("Germany"))
+# print(capitals.values())
+# print(capitals.keys())
+# print(capitals.items())
+# capitals.update({"Germany": "Berlin"})
+# capitals.update({"USA": "Minneapolis"})
+
+
+# --------------------------------------------------
+
+# Index Operator [] = gives access to a sequence's element (str,list,tuples)
+
+name = "James Botham"
+
+# if(name[0].islower):
+#     name = name.capitalize()
+
+firstName = name[:5]
+lastName = name[6:]
+print(firstName,lastName)
+
